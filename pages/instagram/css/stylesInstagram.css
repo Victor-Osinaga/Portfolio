@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	background: #fff;
+	font-family: "Montserrat", sans-serif;
+}
+
+
+.container {
+  	height: 100vh;
+  	display: flex;
+  	justify-content: center;
+  	align-content: center;
+  	gap: 10px;
+}
+
+
+/* Container Left*/
+
+.container__iphone {
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+}
+
+.container__div {
+	background: #fff;
+}
+.marcoiphone {
+	max-width: 405px;
+}
+
+/* Container Right */
+
+.container__right {
+	display: flex;
+	align-items: center;
+	width: 340px;
+	text-align: center;
+}
+
+.form {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	margin-bottom: 12px;
+	box-shadow: .3px .3px 1px gray, -.3px -.3px 1px gray;
+}
+
+.form .logo__img {
+	width: 175px;
+	margin: 0 auto;
+	margin: 20px auto 30px;
+}
+
+.form__item {
+	margin-bottom: 20px;
+}
+
+.form__item--margin {
+	margin-bottom: 10px;
+}
+
+.form__input {
+	margin-bottom: 10px;
+	width: 80%;
+	height: 35px;
+	border: none;
+	box-shadow: .3px .3px 1px gray, -.3px -.3px 1px gray;
+	padding-left: 10px;
+	font-size: 14px;
+}
+
+.form__input::placeholder {
+	font-size: 11px;
+}
+.linea {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+}
+.linea div {
+	width: 110px;
+	box-shadow: .2px .2px 1px gray;
+	height: 1px;
+}
+.linea span {
+	color: gray;
+	margin: 0 15px;
+}
+
+.container__buttom {
+	width: 80%;
+	height: 30px;
+	margin: 0 auto -5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0,149,246,.3);
+}
+
+.container__buttom h5{
+	font-size: 14px;
+	color: #fff;
+}
+
+.iniciarConFacebook {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.iniciarConFacebook a {
+	color: #385185;
+	font-weight: 500;
+	font-size: 14px;
+	padding-left: 10px;
+}
+
+.olvidado a {
+	color: #00376b;
+	font-size: 13px;
+}
+
+.registrate {
+	box-shadow: .3px .3px 1px gray, -.3px -.3px 1px gray;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #fff;
+}
+
+.registrate a {
+	color: #0095f6;
+}
+
+.stores {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.stores div a p {
+	padding-left: 6px;
+}
+
+.stores a {
+	font-size: 10px;
+	color: white;
+}
+.stores a span {
+	font-size: 15px;
+	display: block;
+}
+
+.appStore, .playStore {
+	padding: 5px;
+	background-color: black;
+	display: flex;
+	border-radius: 5px;
+}
+
+
+
+.fa-apple {
+	color: white;
+}
+
+.svg__store {
+	width: 25px;
+	height: 25px;
+}
+
+
+
+/* FOOTER */
+
+#footer {
+	width: 100%;
+}
+
+.container__footer {
+	width: 75%;
+	margin: 0 auto;
+}
+
+.ul__first {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+.ul__first li{
+	color: gray;
+	list-style: none;
+	margin: 6px 7px;
+	font-size: 15px;
+}
+
+.ul__first li:hover {
+	cursor: pointer;
+}
+
+.ul__second {
+	margin-bottom: 50px;
+}

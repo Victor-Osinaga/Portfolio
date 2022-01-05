@@ -1,0 +1,81 @@
+@media (min-width: 350px) and (max-width: 767px) {
+
+	.container__iphone {
+		display: none;
+	}
+
+	.container__div {
+	margin-top: -20px;
+	}
+
+	.descargaApp .form__item{
+		font-size: 15px
+	}
+
+	.form__input::placeholder {
+		font-size: 11px;
+	}
+
+	.ul__first li{
+	margin: 7px 7px;
+	font-size: 13px;
+	}
+
+	.registrate p, a {
+		font-size: 13px;
+	}
+
+	.registrate p a {
+		font-weight: 600;
+	}
+	
+	.iniciarConFacebook a{
+		font-size: 13px;
+		font-weight: 600;
+	}
+
+	.container__footer {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.container__div {
+	margin-top: -20px;
+	}
+
+	.descargaApp .form__item{
+		font-size: 16px;
+	}
+
+	.form__input::placeholder {
+		font-size: 12px;
+	}
+
+	.ul__first li{
+	margin: 7px 15px;
+	font-size: 14px;
+	}
+
+	.registrate p, a {
+		font-size: 15px;
+	}
+
+	.registrate p a {
+		font-weight: 600;
+	}
+	
+	.iniciarConFacebook a{
+		font-size: 15px;
+		font-weight: 600;
+	}
+
+	.container__footer {
+		width: 90%;
+	}
+}

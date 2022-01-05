@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+:root {
+--neon-color: #08fdd8;
+--font-color: #f5f5f5;
+--subtitle-color: #8e8e8e;
+--alternative-black-color: #191919;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #040402;
+  color: var(--font-color);
+}
+
+section {
+  padding: 90px 0;
+  text-align: center;
+  background: #040402;
+}
+
+
+/* CONTAINER DEL NAV, ABOUT, SERVICES, PORTFOLIO, CONTACT,
+                        FOOTER */
+
+.container {
+  width: 100%;
+  display: inherit;
+  max-width: 1200px;
+  justify-content: inherit;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ------- NAV -------*/
+
+.navbar {
+	position: fixed;
+	background: transparent;
+	transition: background .5s;
+	display: flex;
+	justify-content: space-between;
+	height: 60px;
+	width: 100%;
+	z-index: 5;
+}
+
+.navbar__logo {
+	display: flex;
+	align-items: center;
+}
+
+.navbar__title {
+  font-size: 24px;
+}
+.navbar__title::before {
+  content: "<";
+  color: var(--neon-color);
+}
+.navbar__title::after {
+  content: "/>";
+  color: var(--neon-color);
+}
+
+.navbar__title a {
+	color: var(--font-color);
+	text-shadow: 5px 5px 5px transparent;
+	transition: color 1s, text-shadow 1s;
+}
+
+.navbar__title a:hover {
+  	color: var(--neon-color);
+	text-shadow:0 0 75px #08fdd8,
+				0 0 55px #08FDd8,
+				0 0 40px #08FDd8,
+				0 0 30px #08FDd8,
+				0 0 20px #08FDd8,
+				0 0 15px #FFF,
+				0 0 10px #FFF,
+				0 0 5px #FFF;
+	transition: color 1s, text-shadow .5s;
+}
+
+.navbar__links {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.navbar__link {
+  padding-left: 20px;
+}
+.navbar__link a {
+	color: var(--font-color);
+  	text-shadow: 5px 10px 3px transparent;
+  	transition: text-shadow .5s, color 1s;
+}
+.navbar__link a:hover {
+	color: var(--neon-color);
+	text-shadow: 5px 10px 3px rgba(206,89,55,0), 6px 10px 3px #08fdd8;
+	/*text-shadow: 0 15px 5px white;*/
+	transition: text-shadow .2s, color 1s;
+}
+
+.navbar__menu {
+  display: none;
+  align-items: center;
+  font-size: 35px;
+}
+
+/* -------- FIN DE NAV ---------*/
+
+	/*--------------------*/
+
+/* ------- SECCION HOME --------*/
+
+#home {
+  min-height: 100vh;
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  position: relative;
+}
+
+.home__background {
+  /*background-color: #8e8e8e;*/
+  background-image: url(../assets/bg.webp);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.container__profile {
+	position: relative;
+	/*width: 230px;*/
+	height: 380px;
+	border-radius: 5%;
+	box-shadow: 5px 5px 5px transparent;
+	transition: box-shadow .7s ease-in-out;
+}
+
+/*- Home animation img shadow NO INFINITE.
+   ACTIVAR: comentar y descomentar segun animación de
+   preferencia -*/
+/* Opcion 1 Sombra en hover*/
+
+.container__profile:hover {
+	box-shadow: 0 0 75px #08fdd8,
+				0 0 35px #08FDd8,
+				0 0 20px #08FDd8,
+				0 0 10px #08FDd8,
+				0 0 5px #08FDd8;
+	transition: box-shadow .7s ease-in-out;
+}
+
+/*- Home animation img shadow INFINITE -*/
+/* Opcion 2 Sombra activa constantemente*/
+
+/*.container__profile {
+	position: relative;
+	width: 230px;
+	height: 380px;
+	animation-name: sombra;
+	animation-duration: 1.3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	box-shadow: 0 0 15px #fff;
+}
+
+@keyframes sombra {
+	0% {
+		box-shadow: 0 0 15px #fff;
+
+	}
+
+	100% {
+		box-shadow:0 0 75px #08fdd8,
+				0 0 55px #08FDd8,
+				0 0 40px #08FDd8,
+				0 0 30px #08FDd8,
+				0 0 20px #08FDd8,
+				0 0 15px #FFF,
+				0 0 10px #FFF,
+				0 0 5px #FFF;
+	}
+}*/
+
+.container__profile .home__profile {
+  	height: 100%;
+ 	border-radius: 5%;
+	object-fit: cover;
+}
+
+.container__profile .home__profile2 {
+	height: 100%;
+ 	border-radius: 5%;
+	object-fit: cover;
+	position: absolute;
+	left: 0px;
+	opacity: 1;
+  	transition: opacity .7s ease-in-out;
+	/*left: 0px; <--- Para ajustar las dos imagenes en Responsive*/
+	
+}
+.container__profile .home__profile2:hover {
+  opacity: 0;
+  transition: opacity .7s ease-in-out;
+}
+
+/* Titulos HOME */
+
+.home__description {
+	margin-left: 40px;
+}
+
+.home__title {
+  font-size: 60px;
+  text-shadow: 1px 1px black;
+  color: var(--neon-color);
+
+}
+
+.home__title--primary,
+.home__title--secondary {
+  font-size: 45px;
+  color: var(--font-color);
+  text-shadow: 0 10px 10px white;
+}
+
+/* ------- FIN DE SECCION HOME/PROFILE --------*/
+
+			/*--------------------*/
+
+/* ------- TITULOS Y SUBTITULOS DE LAS SECCIONES ------*/
+
+.section__title {
+	color: var(--font-color);
+	font-size: 35px;
+	margin-bottom: 40px;
+	background-color: re;
+}
+
+.section__title:after {
+	content: "";
+	display: block;
+	width: 170px;
+	height: 4px;
+	background-color: var(--neon-color);
+	margin: 7px auto 40px;
+}
+
+.section__subtitle {
+	color: var(--subtitle-color);
+	margin-bottom: 30px;
+}
+
+/* ----- FIN DE TITULOS Y SUBTITLOS DE LAS SECCIONES ----*/
+
+
+/* ---------------- SECCION ABOUT ---------------*/
+
+#about {
+}
+
+.about__grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 60px; /* gap de 20px para responsive*/
+}
+
+/* Cuadro IZQUIERDO de Description*/
+.about__description {
+	text-align: center;
+	color: var(--subtitle-color);
+	/*line-height: 45px;*/
+	background-color: re;
+}
+
+.description__title {
+	margin-bottom: 30px;
+}
+
+.about__description h2 {
+	color: var(--font-color);
+	margin-bottom: 30px;
+	line-height: 45px;
+}
+
+.about__description p {
+	font-size: 17px;
+	margin-bottom: 70px;
+	line-height: 45px;
+}
+
+.about__description a {
+	background-color: re;
+}
+
+.button__cv-animation a i {
+	margin-right: 5px;
+}
+
+/* ANIMACION BOTON CV*/
+
+.button__cv-animation {
+	margin: 0 auto;
+	width: 300px;
+	height: 50px;
+	background-color: var(--neon-color);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/*border-radius: 5%;*/
+
+	animation-name: sombra;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	box-shadow: 0 0 10px #fff;
+}
+
+.button__cv-animation a{
+	color: #fff;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	letter-spacing: 2px;
+	font-size: 24px;
+}
+
+@keyframes sombra {
+	0% {
+
+	}
+
+	100% {
+		box-shadow:0 0 75px #08fdd8,
+				0 0 55px #08FDd8,
+				0 0 40px #08FDd8,
+				0 0 30px #08FDd8,
+				0 0 20px #08FDd8,
+				0 0 15px #FFF,
+				0 0 10px #FFF,
+				0 0 5px #FFF;
+	}
+}
+
+
+/* Cuadro DERECHO de SKILLS*/
+.about__skills {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 15px;
+	background: re;
+}
+
+.skill__title {
+	color: var(--subtitle-color);
+	grid-column: span 3;
+	text-align: center;
+}
+
+.skill__item {
+	background-color: var(--alternative-black-color);
+	font-size: 50px;
+	color: var(--subtitle-color);
+  	padding: 35px;
+  	transition: all .5s;
+  	min-width: 130px;
+  	border-radius: 5%;
+}
+
+.skill__item:hover {
+	color: var(--neon-color);
+	transition: all .5s;
+}
+
+.skill__name {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* --------- FIN DE SECCION ABOUT -----------*/
+
+
+/*------------ SECCION SERVICES -----------*/
+
+.services__grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.services__item {
+	padding: 20px;
+	background-color: var(--alternative-black-color);
+	box-shadow: 1px 0 20px transparent;
+	border-bottom: 5px solid transparent;
+	transition: box-shadow 1s, border 1s;
+}
+.services__item:hover {
+	border-bottom: 5px solid var(--neon-color);
+	box-shadow: 1px 0 20px var(--neon-color);
+	transition: box-shadow 1s, border 1s;
+}
+
+.services__item:hover i {
+	color: var(--neon-color);
+	transition: color 1s;
+}
+
+.services__item i {
+	color: var(--subtitle-color);
+	font-size: 40px;
+	margin: 20px 0;
+	transition: color 1s;
+}
+
+
+.services__item h3 {
+  margin-bottom: 15px;
+}
+
+.services__item p {
+  color: var(--subtitle-color);
+}
+
+/*---------- FIN DE SECCION SERVICES ---------*/
+
+
+/* ------------ SECCION PORTFOLIO ----------- */
+
+.portfolio__grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.portfolio__item {
+	/*background-color: white;*/
+	position: relative;
+	object-fit: cover;
+	overflow: hidden;
+	font-size: 15px;
+}
+
+.portfolio__img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	transition: all 1s;
+	filter: grayscale(1);
+}
+
+.portfolio__description {
+	padding: 50px;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.7);
+	top: 300px;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: all 1s_;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.portfolio__item:hover .portfolio__description {
+	visibility: visible;
+	opacity: 1;
+	transition: all 1s;
+	transform: translateY(-300px);
+}
+
+.portfolio__item:hover .portfolio__img {
+	transition: all 1s;
+	transform: scale(1.3);
+}
+
+.portfolio__description--title {
+	color: var(--neon-color);
+}
+
+.portfolio__description--text {
+	margin: 20px 0;
+}
+
+.button__container {
+	display: flex;
+	background-color: re;
+}
+
+.button {
+	background: var(--alternative-black-color);
+	color: var(--font-color);
+	padding: 5px 10px;
+	/*display: inline-block;*/
+	margin: 0 auto;
+}
+
+.button:hover {
+	color: var(--neon-color)
+}
+
+/* --------- FIN DE SECCION PORTFOLIO ---------- */
+
+
+/*-------------- SECCION CONTACT ---------------*/
+
+.contact__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.contact__item {
+  background: var(--alternative-black-color);
+  color: var(--subtitle-color);
+  padding: 50px;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.contact__item i {
+	font-size: 50px;
+	margin-bottom: 10px;
+	transition: color 1s;
+	color: var(--subtitle-color);
+}
+
+.contact__item:hover i {
+	transition: color 1s, text-shadow 1s;
+	color: var(--neon-color);
+	text-shadow: 3px 3px #040402;
+}
+
+.contact__item:hover {
+	transition: all 1s;
+	color: var(--font-color);
+	text-shadow: 2px 2px #040402;
+}
+
+.active a {
+  color: var(--neon-color);
+
+	text-shadow:0 0 75px #08fdd8,
+				0 0 55px #08FDd8,
+				0 0 40px #08FDd8,
+				0 0 30px #08FDd8,
+				0 0 20px #08FDd8,
+				0 0 15px #FFF,
+				0 0 10px #FFF,
+				0 0 5px #FFF;
+	transition: color 1s, text-shadow .5s;
+}
+
+/*-------------- FIN DE SECCION CONTACT ---------------*/
+
+
+/* ----------------- SECCION FOOTER ------------------*/
+
+#footer {
+	color: var(--subtitle-color);
+	background-color: rgba(0, 0, 0, 0.9);
+	padding: 30px;
+	text-align: center;
+	font-size: 14px;
+}
+
+#footer a {
+	color: var(--subtitle-color);
+}
+
+#footer a:hover {
+  color: var(--neon-color);
+}
+
+/* -------------- FIN DE SECCION FOOTER ---------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.navbar__links {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}*/
+
+

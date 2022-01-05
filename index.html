@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!------------- IMAGENES IPHONE ------------>
+    <!-- <link rel="apple-touch-icon" href="./assets/logo.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/logo-120x120.png"
+    /> -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/medias.css">
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <!-- <script
+      src="https://kit.fontawesome.com/7b5fb2de65.js"
+      crossorigin="anonymous"
+      async></script> -->
+      <script src="https://kit.fontawesome.com/46583ded3b.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> <!-- LIVE SERVER -->
+  <meta charset="utf-8">
+	<title>Victor Osinaga | Portfolio</title>
+</head>
+<body>
+	<nav class="navbar">
+      <div class="container">
+        <div class="navbar__logo">
+          <p class="navbar__title">
+            <a href="#">Victor Osinaga</a>
+          </p>
+        </div>
+        <div class="navbar__menu">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="navbar__links">
+          <li class="navbar__link active" data-ref="home">
+            <a href="#home">Home</a>
+          </li>
+          <li class="navbar__link" data-ref="about">
+            <a href="#about">About</a>
+          </li>
+          <li class="navbar__link" data-ref="services">
+            <a href="#services">Services</a>
+          </li>
+          <li class="navbar__link" data-ref="portfolio">
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li class="navbar__link" data-ref="contact">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="home" class="home">
+      	<div class="home__background"></div>
+      	<div class="container__profile">
+        	<img type="image/webp" alt="picture profile"  src="./assets/profile.webp" class="home__profile"/>
+        	<img class="home__profile2" type="image/webp" src="./assets/profile2.webp">
+      	</div>
+      	<div class="home__description">
+        	<span class="home__title--primary">Hola!</span>
+        		<h1 class="home__title">Soy Victor Osinaga.</h1>
+        	<span class="home__title--secondary">- Desarrollador Web -</span>
+      	</div>
+    </section>
+
+    <!-- ABOUT -->
+
+    <section id="about">
+      <div class="container">
+        <h2 class="section__title">About</h2>
+        <div class="about__grid">
+          <div class="about__description">
+            <h3 class="description__title">¿ Quién Soy ?</h3>
+            <h2> Soy Victor Osinaga... Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
+            <p>
+              I am a ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+            <div class="button__cv-animation">
+              <a 
+                class="button__cv" 
+                href="./assets/Victor Osinaga.txt" 
+                download="Victor Osinaga CV" 
+                target="_BLANK" 
+                rel="noopener nooferrer">
+                <i class="fas fa-file-download"></i>Descargar CV
+              </a>
+            </div>
+          </div>
+
+          <div class="about__skills">
+            <div class="skill__title">
+              <h3>Mis habilidades:</h3>
+            </div>
+            <div class="skill__item">
+              <div class="skill__name">HTML5</div>
+              <i class="fab fa-html5"></i>
+            </div>
+            <div class="skill__item">
+              <div class="skill__name">CSS3</div>
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <div class="skill__item">
+              <div class="skill__name">JAVASCRIPT</div>
+              <i class="fab fa-js"></i>
+            </div>
+            <div class="skill__item">
+              <div class="skill__name">SASS</div>
+              <i class="fab fa-sass"></i>
+            </div>
+            <div class="skill__item"> <!--style="visibility: hidden;"-->
+              <div class="skill__name">BOOTSTRAP</div>
+              <i class="fab fa-bootstrap"></i>
+            </div>
+            <div class="skill__item"> <!--style="visibility: hidden;"-->
+              <div class="skill__name">REACT</div>
+              <i class="fab fa-react"></i>
+            </div>
+            <div class="skill__item"> <!--style="visibility: hidden;"-->
+              <div class="skill__name">GIT</div>
+              <i class="fab fa-git-alt"></i>
+            </div>
+            <div class="skill__item"> <!--style="visibility: hidden;"-->
+              <div class="skill__name">NODE.JS</div>
+              <i class="fab fa-node"></i>
+            </div>
+            <div class="skill__item"> <!--style="visibility: hidden;"-->
+              <div class="skill__name">MONGODB</div>
+              <i class="fas fa-database"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+
+    <section id="services">
+      <div class="container">
+        <h2 class="section__title">Servicios</h2>
+        <h3 class="section__subtitle">Servicios que puedo ofrecer</h3>
+      <div class="services__grid">
+        <div class="services__item">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>Full Responsive</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="services__item">
+          <i class="fas fa-pencil-ruler"></i>
+          <h3>Full Responsive</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="services__item">
+          <i class="fas fa-code"></i>
+          <h3>Full Responsive</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="services__item">
+          <i class="fas fa-thumbs-up"></i>
+          <h3>Full Responsive</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="services__item">
+          <i class="fas fa-tachometer-alt"></i>
+          <h3>Full Responsive</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="services__item">
+          <i class="fas fa-crosshairs"></i>
+          <h3>Full Responsive</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+
+    <section id="portfolio">
+      <div class="container">
+        <h2 class="section__title">Portfolio</h2>
+        <h3 class="section__subtitle">Mis mejores proyectos</h3>
+        <div class="portfolio__grid">
+          <div class="portfolio__item">
+            <picture>
+              <source srcset="assets/bg-ig.png" type="image/jpeg">
+              <img class="portfolio__img" alt="item portfolio">
+            </picture>
+            <div class="portfolio__description">
+              <h3 class="portfolio__description--title">Clon Instagram</h3>
+              <p class="portfolio__description--text">
+                Html, Css, Sass, Javascript 
+              </p>
+              <div class="button__container">
+                <a 
+                  class="button" 
+                  href="./pages/instagram/registro.html"
+                  target="_BLANK"
+                  rel="noopener nooferrer">
+                  <i class="fas fa-globe-americas">
+                  </i> Sitio web
+                </a>
+                <a 
+                  class="button" 
+                  href="https://github.com/coquui/coquui.github.io/tree/main/pages/instagram"
+                  target="_BLANK"
+                  rel="noopener nooferrer" 
+                  >
+                  <i class="fab fa-github"></i> Código
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__item">
+            <picture>
+              <source srcset="assets/bg-ig.png" type="image/jpeg">
+              <img class="portfolio__img" alt="item portfolio">
+            </picture>
+            <div class="portfolio__description">
+              <h3 class="portfolio__description--title">Clon Instagram</h3>
+              <p class="portfolio__description--text">
+                Html, Css, Sass, Javascript
+              </p>
+              <div class="button__container">
+                <a 
+                  class="button"
+                  target="_BLANK"
+                  rel="noopener nooferrer"
+                  href="./pages/proyecto2/proyecto2.html"
+                >
+                  <i class="fas fa-globe-americas"></i> Sitio web
+                </a>
+                <a 
+                  class="button" 
+                  target="_BLANK" 
+                  rel="noopener nooferrer" 
+                  href="https://github.com/coquui/coquui.github.io/tree/main/pages/proyecto2"
+                  >
+                  <i class="fa fa-github"></i> Código
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <picture>
+              <source srcset="assets/bg-ig.png" type="image/jpeg">
+              <img class="portfolio__img" alt="item portfolio">
+            </picture>
+            <div class="portfolio__description">
+              <h3 class="portfolio__description--title">Clon Instagram</h3>
+              <p class="portfolio__description--text">
+                Html, Css, Sass, Javascript
+              </p>
+              <div class="button__container">
+                <a 
+                  class="button" 
+                  href="./pages/proyecto3/proyecto3.html" 
+                  target="_BLANK" 
+                  rel="noopener nooferrer"
+                  >
+                  <i class="fas fa-globe-americas"></i> Sitio Web
+                </a>
+                <a 
+                  class="button" 
+                  href="https://github.com/coquui/coquui.github.io/tree/main/pages/proyecto3" target="_BLANK" 
+                  rel="noopener nooferrer"
+                  >
+                  <i class="fab fa-github"></i> Código
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__item">
+            <picture>
+                <source srcset="assets/bg-ig.png" type="image/jpeg">
+                <img class="portfolio__img" alt="item portfolio">
+            </picture>
+            <div class="portfolio__description">
+              <h3 class="portfolio__description--title">Clon Instagram</h3>
+              <p class="portfolio__description--text">
+                Html, Css, Sass, Javascript
+              </p>
+              <div class="button__container">
+                <a  
+                    target="_BLANK" 
+                    rel="noopener nooferrer" 
+                    class="button" 
+                    href="./pages/proyecto4/proyecto4.html"
+                  >
+                    <i class="fas fa-globe-americas"></i> Sitio web
+                </a>
+                <a 
+                    class="button" 
+                    target="_BLANK" 
+                    rel="noopener nooferrer" 
+                    href="https://github.com/coquui/coquui.github.io/tree/main/pages/proyecto4"
+                  >
+                    <i class="fab fa-github"></i> Código
+                  </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__item">
+            <picture>
+              <source srcset="assets/bg-ig.png" type="image/jpeg">
+                <img class="portfolio__img" alt="item portfolio">
+            </picture>
+            <div class="portfolio__description">
+              <h3 class="portfolio__description--title">Clon Instagram</h3>
+              <p class="portfolio__description--text">
+                Html, Css, Sass, Javascript
+              </p>
+              <div class="button__container">
+                <a  
+                    target="_BLANK" 
+                    rel="noopener nooferrer" 
+                    class="button" 
+                    href="./pages/proyecto5/proyecto5.html"
+                  >
+                    <i class="fas fa-globe-americas"></i> Sitio web
+                </a>
+                <a class="button" target="_BLANK" rel="noopener nooferrer" href="https://github.com/coquui/coquui.github.io/tree/main/pages/proyecto5">
+                  <i class="fab fa-github"></i> Código
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__item">
+            <picture>
+              <source srcset="assets/bg-ig.png" type="image/jpeg">
+              <img class="portfolio__img" alt="item portfolio">
+            </picture>
+            <div class="portfolio__description">
+              <h3 class="portfolio__description--title">Clon Instagram</h3>
+              <p class="portfolio__description--text">
+                Html, Css, Sass, Javascript
+              </p>
+              <div class="button__container">
+                <a class="button" target="_BLANK" rel="noopener nooferrer" href="./pages/proyecto6/proyecto6.html">
+                  <i class="fas fa-globe-americas"></i> Sitio Web
+                </a>
+                <a class="button" target="_BLANK" rel="noopener nooferrer" href="https://github.com/coquui/coquui.github.io/tree/main/pages/proyecto6">
+                  <i class="fab fa-github"></i> Código
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2 class="section__title">Contact</h2>
+        <h3 class="section__subtitle">Abierto a propuestas</h3>
+        <h4 class="section__subtitle">No dude en contactarme!</h4>
+        <div class="contact__grid">
+          <!-- <a href="#" target="_BLANK" rel="noopener nooferrer">
+            <div class="contact__item">
+              <i class="fas fa-phone-alt"></i>
+              <p>Número</p>
+            </div>
+          </a> -->
+          <a href="mailto:osinagavictor4@gmail.com"
+             target="_BLANK" rel="noopener nooferrer">
+            <div class="contact__item">
+              <i class="fas fa-paper-plane"></i>
+              <p>Mail</p>
+            </div>
+          </a>
+          <a href="https://github.com/coquui"
+              target="_BLANK" rel="noopener nooferrer">
+            <div class="contact__item">
+              <i class="fab fa-github"></i>
+              <p>Github</p>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/victor-osinaga-269925200/"
+              target="_BLANK" rel="noopener nooferrer">
+            <div class="contact__item">
+              <i class="fab fa-linkedin-in"></i>
+              <p>Linkedin</p>
+            </div>
+          </a>
+          <a href="https://wa.me/5492966605314?text=Hola%20Victor,%20quisiera%20contactarte%20para%20charlar%20sobre%20algunos%20proyectos."
+              target="_BLANK" rel="noopener nooferrer">
+            <div class="contact__item">
+              <i class="fab fa-whatsapp"></i>
+              <p>Whastapp</p>
+            </div>
+          </a>
+          <!-- <a href="#"
+              target="_BLANK" rel="noopener nooferrer">
+            <div class="contact__item">
+              <i class="fab fa-instagram"></i>
+              <p>Instagram</p>
+            </div>
+          </a> -->
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="container">
+        <p>
+          <a href="#">#victorOsinaga</a>
+        </p>
+        <p>
+          Copyright © 2021.
+        </p>
+      </div>
+    </footer>
+</body>
+<script type="text/javascript" src="js/scripts.js"></script>
+</html>
