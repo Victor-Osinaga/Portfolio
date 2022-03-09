@@ -28,15 +28,28 @@
 <body>
 	<nav class="navbar">
       <div class="container">
+        
         <div class="navbar__logo">
           <p class="navbar__title">
             <a href="#">Victor Osinaga</a>
           </p>
+          <div class="container__musica">
+            <audio id="aud" src="./assets/audio320.mp3"></audio>
+            <button class="btnMusica" id="btnMusica" onclick="btn()">Sonido
+              <i id="playPause" class="far fa-play-circle"></i>
+              <!-- <i id="playPause" class="fa fa-play-circle"></i> segundo estilo -->
+            </button>
+          </div>
         </div>
         <div class="navbar__menu">
           <i class="fas fa-bars"></i>
         </div>
         <ul class="navbar__links">
+          <div class="div__logo" >
+            <p class="p1">V</p>
+            <p class="p2">Victor</p>
+            <h4>Desarrollador Web</h4>
+          </div>
           <li class="navbar__link active" data-ref="home">
             <a href="#home">Home</a>
           </li>
@@ -64,7 +77,7 @@
       	</div>
       	<div class="home__description">
         	<span class="home__title--primary">Hola!</span>
-        		<h1 class="home__title">Soy Victor Osinaga.</h1>
+        	<h1 class="home__title">Soy <p class="span-v">Victor</p> Osinaga.</h1>
         	<span class="home__title--secondary">- Desarrollador Web -</span>
       	</div>
     </section>
@@ -116,29 +129,35 @@
               <div class="skill__name">SASS</div>
               <i class="fab fa-sass"></i>
             </div>
-            <div class="skill__item"> <!--style="visibility: hidden;"-->
+            <div class="skill__item">
               <div class="skill__name">BOOTSTRAP</div>
               <i class="fab fa-bootstrap"></i>
             </div>
-            <div class="skill__item"> <!--style="visibility: hidden;"-->
+            <!-- <div class="skill__item">
               <div class="skill__name">REACT</div>
               <i class="fab fa-react"></i>
-            </div>
-            <div class="skill__item"> <!--style="visibility: hidden;"-->
+            </div> -->
+            <div class="skill__item">
               <div class="skill__name">GIT</div>
               <i class="fab fa-git-alt"></i>
             </div>
-            <div class="skill__item"> <!--style="visibility: hidden;"-->
+            <!-- <div class="skill__item">
               <div class="skill__name">NODE.JS</div>
               <i class="fab fa-node"></i>
-            </div>
-            <div class="skill__item"> <!--style="visibility: hidden;"-->
+            </div> -->
+            <!-- <div class="skill__item">
               <div class="skill__name">MONGODB</div>
               <i class="fas fa-database"></i>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- ESFERA -->
+
+    <section class="tagCloud" style="display:flex; font-size: 15px; position: relative; z-index: -1; align-items: center; justify-content: center;">
+      <span class="Sphere"></span>
     </section>
 
     <!-- SERVICIOS -->
@@ -203,24 +222,24 @@
     <!-- SECCION PORTFOLIO -->
 
     <section id="portfolio">
-      <div class="container">
+      <div class="containe">
         <h2 class="section__title">Portfolio</h2>
         <h3 class="section__subtitle">Mis mejores proyectos</h3>
         <div class="portfolio__grid">
           <div class="portfolio__item">
             <picture>
-              <source srcset="assets/bg-ig.png" type="image/jpeg">
+              <source srcset="assets/bg-calculadora.png" type="image/jpeg">
               <img class="portfolio__img" alt="item portfolio">
             </picture>
             <div class="portfolio__description">
-              <h3 class="portfolio__description--title">Clon Instagram</h3>
+              <h3 class="portfolio__description--title">Calculadora</h3>
               <p class="portfolio__description--text">
-                Html, Css, Sass, Javascript 
+                Html, Css, Sass, Javascript
               </p>
               <div class="button__container">
                 <a 
                   class="button" 
-                  href="./pages/instagram/registro.html"
+                  href="https://victor-osinaga.github.io/calculadorajs/"
                   target="_BLANK"
                   rel="noopener nooferrer">
                   <i class="fas fa-globe-americas">
@@ -228,7 +247,7 @@
                 </a>
                 <a 
                   class="button" 
-                  href="https://github.com/coquui/coquui.github.io/tree/main/pages/instagram"
+                  href="https://github.com/Victor-Osinaga/calculadorajs"
                   target="_BLANK"
                   rel="noopener nooferrer" 
                   >
@@ -240,11 +259,11 @@
 
           <div class="portfolio__item">
             <picture>
-              <source srcset="assets/bg-ig.png" type="image/jpeg">
+              <source srcset="assets/bg-ecommerce.png" type="image/jpeg">
               <img class="portfolio__img" alt="item portfolio">
             </picture>
             <div class="portfolio__description">
-              <h3 class="portfolio__description--title">Clon Instagram</h3>
+              <h3 class="portfolio__description--title">e-commerce</h3>
               <p class="portfolio__description--text">
                 Html, Css, Sass, Javascript
               </p>
@@ -253,15 +272,15 @@
                   class="button"
                   target="_BLANK"
                   rel="noopener nooferrer"
-                  href="./pages/proyecto2/proyecto2.html"
-                >
+                  href="https://victor-osinaga.github.io/e-commerce"
+                  >
                   <i class="fas fa-globe-americas"></i> Sitio web
                 </a>
                 <a 
                   class="button" 
                   target="_BLANK" 
                   rel="noopener nooferrer" 
-                  href="https://github.com/coquui/coquui.github.io/tree/main/pages/proyecto2"
+                  href="https://github.com/Victor-Osinaga/e-commerce"
                   >
                   <i class="fa fa-github"></i> Código
                 </a>
@@ -281,7 +300,7 @@
               <div class="button__container">
                 <a 
                   class="button" 
-                  href="./pages/proyecto3/proyecto3.html" 
+                  href="https://victor-osinaga.github.io/instagramClon/" 
                   target="_BLANK" 
                   rel="noopener nooferrer"
                   >
@@ -289,7 +308,7 @@
                 </a>
                 <a 
                   class="button" 
-                  href="https://github.com/coquui/coquui.github.io/tree/main/pages/proyecto3" target="_BLANK" 
+                  href="https://github.com/Victor-Osinaga/instagramClon" target="_BLANK" 
                   rel="noopener nooferrer"
                   >
                   <i class="fab fa-github"></i> Código
@@ -313,7 +332,7 @@
                     target="_BLANK" 
                     rel="noopener nooferrer" 
                     class="button" 
-                    href="./pages/proyecto4/proyecto4.html"
+                    href="https://victor-osinaga.github.io/instagramClon/"
                   >
                     <i class="fas fa-globe-americas"></i> Sitio web
                 </a>
@@ -321,7 +340,7 @@
                     class="button" 
                     target="_BLANK" 
                     rel="noopener nooferrer" 
-                    href="https://github.com/coquui/coquui.github.io/tree/main/pages/proyecto4"
+                    href="https://github.com/Victor-Osinaga/instagramClon"
                   >
                     <i class="fab fa-github"></i> Código
                   </a>
@@ -341,14 +360,18 @@
               </p>
               <div class="button__container">
                 <a  
-                    target="_BLANK" 
-                    rel="noopener nooferrer" 
-                    class="button" 
-                    href="./pages/proyecto5/proyecto5.html"
+                  target="_BLANK" 
+                  rel="noopener nooferrer" 
+                  class="button" 
+                  href="https://victor-osinaga.github.io/instagramClon/"
                   >
-                    <i class="fas fa-globe-americas"></i> Sitio web
+                  <i class="fas fa-globe-americas"></i> Sitio web
                 </a>
-                <a class="button" target="_BLANK" rel="noopener nooferrer" href="https://github.com/coquui/coquui.github.io/tree/main/pages/proyecto5">
+                <a 
+                  class="button" 
+                  target="_BLANK" 
+                  rel="noopener nooferrer" 
+                  href="https://github.com/Victor-Osinaga/instagramClon">
                   <i class="fab fa-github"></i> Código
                 </a>
               </div>
@@ -366,10 +389,18 @@
                 Html, Css, Sass, Javascript
               </p>
               <div class="button__container">
-                <a class="button" target="_BLANK" rel="noopener nooferrer" href="./pages/proyecto6/proyecto6.html">
+                <a 
+                  class="button" 
+                  target="_BLANK" 
+                  rel="noopener nooferrer" 
+                  href="https://victor-osinaga.github.io/instagramClon/">
                   <i class="fas fa-globe-americas"></i> Sitio Web
                 </a>
-                <a class="button" target="_BLANK" rel="noopener nooferrer" href="https://github.com/coquui/coquui.github.io/tree/main/pages/proyecto6">
+                <a 
+                  class="button" 
+                  target="_BLANK" 
+                  rel="noopener nooferrer" 
+                  href="https://github.com/Victor-Osinaga/instagramClon">
                   <i class="fab fa-github"></i> Código
                 </a>
               </div>
@@ -439,6 +470,8 @@
         </p>
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
 </body>
 <script type="text/javascript" src="js/scripts.js"></script>
 </html>

@@ -95,6 +95,32 @@ section {
 	transition: color 1s, text-shadow .5s;
 }
 
+.container__musica {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.btnMusica {
+	margin-left: 10px;
+	background-color: transparent;
+	color: white;
+	box-shadow: none;
+	border: none;
+	font-size: 16px;
+}
+
+.btnMusica:hover {
+	cursor: pointer;
+}
+
+.fa-play-circle {
+	color: aqua;
+}
+
+.div__logo {
+	visibility: hidden;
+}
+
 .navbar__links {
   list-style: none;
   display: flex;
@@ -210,6 +236,7 @@ section {
   	height: 100%;
  	border-radius: 5%;
 	object-fit: cover;
+	outline: 1px solid var(--neon-color);
 }
 
 .container__profile .home__profile2 {
@@ -237,16 +264,31 @@ section {
 .home__title {
   font-size: 60px;
   text-shadow: 1px 1px black;
-  color: var(--neon-color);
+  color: var(--font-color);
 
 }
 
-.home__title--primary,
+.home__title--primary {
+	font-size: 45px;
+  	color: var(--font-color);
+  	text-shadow: 0 10px 10px white;
+}
 .home__title--secondary {
   font-size: 45px;
-  color: var(--font-color);
+  color: var(--neon-color);
   text-shadow: 0 10px 10px white;
 }
+
+.home .home__description .home__title .span-v {
+	color: white;
+	display: inline-block;
+  }
+  
+  .home .home__description .home__title .span-v:first-letter {
+	font-weight: bold;
+	color: red;
+	text-shadow: #08fdd8 -5px 0px 1px;
+  }
 
 /* ------- FIN DE SECCION HOME/PROFILE --------*/
 
@@ -280,8 +322,6 @@ section {
 
 /* ---------------- SECCION ABOUT ---------------*/
 
-#about {
-}
 
 .about__grid {
 	display: grid;
@@ -393,6 +433,10 @@ section {
   	transition: all .5s;
   	min-width: 130px;
   	border-radius: 5%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .skill__item:hover {
@@ -459,7 +503,6 @@ section {
 .portfolio__grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 20px;
 }
 
 .portfolio__item {

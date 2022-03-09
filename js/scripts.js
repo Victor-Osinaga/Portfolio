@@ -77,3 +77,42 @@ ScrollReveal().reveal(".services__item", { delay: 450 });
 ScrollReveal().reveal(".portfolio__item", { delay: 450 });
 ScrollReveal().reveal(".contact__item", { delay: 450 });
 ScrollReveal().reveal(".footer", { delay: 450 });
+
+
+const Texts = [
+  'BOOTSTRAP', 'TAG CLOUD','HTML', 'JAVASCRIPT', 'BEM', 'SEO', 'DISEÑO', 'RESPONSIVE', 'CSS', 'OPTIMIZACION', 'RENDIMIENTO', 'SASS'
+]
+
+var tagCloud = TagCloud('.Sphere', Texts, {
+ radius: 140,
+ maxSpeed: 'fast',
+ initSpeed: 'fast',
+ direction: 240,
+ keep: true,
+ useContainerInlineStyles: true
+});
+
+var color = '#08fdd8'
+document.querySelector('.Sphere').style.color = color;
+// document.querySelector('.Sphere').style.background = 'rgba(128, 128, 128, 0.18)';
+
+
+
+function btn(){
+  var bg = document.getElementById("playPause");
+  var x=document.getElementById("aud");
+  var btnMusica=document.getElementById("btnMusica");
+  if(x.paused /* && (musica.style.display="block") */){
+    x.play()
+    bg.style.color="red";
+    bg.style.textShadow="3px 5px 3px rgb(206 89 55 / 0%), 4px 5px 3px #FF0000";
+    btnMusica.style.textShadow="3px 5px 3px rgb(206 89 55 / 0%), 4px 5px 3px #08fdd8";
+  }
+  else{
+    x.pause()
+    /* x.currentTime = 0 */
+    bg.style.color="aqua";
+    btnMusica.style.textShadow="none";
+    bg.style.textShadow="none";
+  }
+}

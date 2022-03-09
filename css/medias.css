@@ -1,9 +1,47 @@
 @media (max-width: 991px) {
 
+  .navbar__title {
+    font-size: 20px;
+  }
 
+  .btnMusica {
+    font-size: 14px;
+  }
+
+  .navbar__menu {
+    font-size: 24px;
+  }
 
   .navbar__menu {
     display: flex;
+  }
+  
+  .div__logo {
+    visibility: visible;
+    height: 30vh;
+    width: 100%;
+    background-color: rgba(49, 49, 49, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .div__logo .p1 {
+    font-weight: bold;
+    font-size: 45px;
+    color: red;
+    text-shadow: #08fdd8 -5px 0px 1px;
+  }
+
+  .div__logo .p2 {
+    font-weight: bold;
+    margin: 10px 0 15px;
+  }
+
+  .div__logo h4 {
+    color: gray;
+    font-size: 14px;
   }
 
   .navbar__links {
@@ -114,6 +152,18 @@
     background-size: cover;
     background-position: center;
   }*/
+
+  .navbar__title {
+    font-size: 16px;
+  }
+
+  .btnMusica {
+    font-size: 14px;
+  }
+
+  .navbar__menu {
+    font-size: 20px;
+  }
 
   section {
     padding: 60px 0;
