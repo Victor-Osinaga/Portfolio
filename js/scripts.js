@@ -98,21 +98,24 @@ document.querySelector('.Sphere').style.color = color;
 
 
 
+let audio=document.getElementById("aud");
+let botonMusica=document.getElementById("btnMusica");
+let inconoPlayPause = document.getElementById("playPause");
+
+botonMusica.addEventListener("click", btn);
+
 function btn(){
-  var bg = document.getElementById("playPause");
-  var x=document.getElementById("aud");
-  var btnMusica=document.getElementById("btnMusica");
-  if(x.paused /* && (musica.style.display="block") */){
-    x.play()
-    bg.style.color="red";
-    bg.style.textShadow="3px 5px 3px rgb(206 89 55 / 0%), 4px 5px 3px #FF0000";
-    btnMusica.style.textShadow="3px 5px 3px rgb(206 89 55 / 0%), 4px 5px 3px #08fdd8";
+  if(audio.paused /* && (musica.style.display="block") */){
+    audio.play()
+    inconoPlayPause.style.color="red";
+    inconoPlayPause.style.textShadow="3px 5px 3px rgb(206 89 55 / 0%), 4px 5px 3px #FF0000";
+    botonMusica.style.textShadow="3px 5px 3px rgb(206 89 55 / 0%), 4px 5px 3px #08fdd8";
   }
   else{
-    x.pause()
-    /* x.currentTime = 0 */
-    bg.style.color="aqua";
-    btnMusica.style.textShadow="none";
-    bg.style.textShadow="none";
+    audio.pause()
+    // audio.currentTime = 0; REINICIA LA CANCION
+    inconoPlayPause.style.color="aqua";
+    botonMusica.style.textShadow="none";
+    inconoPlayPause.style.textShadow="none";
   }
 }
