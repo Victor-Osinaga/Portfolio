@@ -140,6 +140,7 @@
   .services__grid,
   .portfolio__grid {
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 350px 350px 350px;
     gap: 20px;
   }
 }

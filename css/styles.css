@@ -503,6 +503,7 @@ section {
 .portfolio__grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 360px);
 }
 
 .portfolio__item {
@@ -555,6 +556,7 @@ section {
 
 .portfolio__description--text {
 	margin: 20px 0;
+	line-height: 30px;
 }
 
 .button__container {
