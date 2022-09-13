@@ -80,7 +80,7 @@ ScrollReveal().reveal(".footer", { delay: 450 });
 
 
 const Texts = [
-  'BOOTSTRAP', 'TAG CLOUD','HTML', 'JAVASCRIPT', 'BEM', 'SEO', 'DISEÑO', 'RESPONSIVE', 'CSS', 'OPTIMIZACION', 'RENDIMIENTO', 'SASS'
+  'BOOTSTRAP', 'TAG CLOUD','HTML', 'JAVASCRIPT', 'BEM', 'SEO', 'DISEÑO', 'RESPONSIVE', 'CSS', 'OPTIMIZACION', 'RENDIMIENTO', 'SASS', 'NODE JS', 'EXPRESS', 'FIREBASE', 'API REST'
 ]
 
 var tagCloud = TagCloud('.Sphere', Texts, {
