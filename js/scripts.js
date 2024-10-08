@@ -5,7 +5,7 @@ const links = document.querySelector(".navbar__links");
 const sections = document.querySelectorAll("section");
 const config = {
   rootMargin: "0px",
-  threshold: [0.6, 0.9],
+  threshold: [0.3, 0.6],
 };
 
 function handleLlinks() {
@@ -80,7 +80,7 @@ ScrollReveal().reveal(".footer", { delay: 450 });
 
 
 const Texts = [
-  'BOOTSTRAP', 'TAG CLOUD','HTML', 'JAVASCRIPT', 'BEM', 'SEO', 'DISEÑO', 'RESPONSIVE', 'CSS', 'OPTIMIZACION', 'RENDIMIENTO', 'SASS', 'NODE JS', 'EXPRESS', 'FIREBASE', 'API REST'
+  'BOOTSTRAP','HTML', 'JAVASCRIPT', 'BEM', 'RESPONSIVE', 'CSS', 'SASS', 'NODE JS', 'EXPRESS', 'FIREBASE', 'API REST', 'REACT', 'EXPRESS', 'FRONTEND', 'BACKEND'
 ]
 
 var tagCloud = TagCloud('.Sphere', Texts, {
